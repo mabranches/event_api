@@ -14,7 +14,7 @@ default: &default
   encoding: utf8
   pool: 5
   username: <%= ENV['RDS_USERNAME'] || 'root'%>
-  password:<%= ENV['RDS_PASSWORD'] %>
+  password: <%= ENV['RDS_PASSWORD'] %>
   host: <%= ENV['RDS_HOSTNAME'] || 'localhost'%>
 
 development:
